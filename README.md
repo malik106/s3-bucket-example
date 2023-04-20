@@ -17,6 +17,7 @@ Along with above main layers, it also contains various other sub-layers like:-
 ## Installation
 
 - Pre-requisites
+
   Before proceeding with the instructions, you need to have an AWS account and an S3 bucket created.
 
   Step 1: Set up AWS credentials:
@@ -27,11 +28,10 @@ Along with above main layers, it also contains various other sub-layers like:-
 
   If you don't have an S3 bucket, you can create one by following the instructions provided on the AWS documentation.
 
-  
   Clone the project by copying below mentioned command into your directory :-
 
   ```sh
-  git clone https://gitlab.com/skisme4u/expressjs-boilerplate.git
+  git clone https://github.com/malik106/s3-bucket-example
   ```
 
   Change directory to ems by typing below mentioned command :-

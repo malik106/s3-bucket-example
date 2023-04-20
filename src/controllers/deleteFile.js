@@ -9,7 +9,7 @@ exports.deleteFile = async (req, res) => {
     const file = req.query.key;
     const response = await service.deleteFile(file);
     if (response) {
-      return res.status(200).json('File deleted successfully');
+      return res.status(200).json({ msg: 'File deleted successfully' });
     }
   } catch (error) {
     return res.status(error.statusCode || 500).json({

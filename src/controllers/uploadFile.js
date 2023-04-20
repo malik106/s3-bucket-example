@@ -8,7 +8,7 @@ exports.uploadFile = async (req, res) => {
   try {
     const { file } = req;
     const response = await service.uploadFile(file);
-    if (response) return res.status(200).json('File uploaded successfully');
+    if (response) return res.status(200).json({ msg: 'File uploaded successfully' });
   } catch (error) {
     return res.status(error.statusCode || 500).json({
       error_type: error.errorType || defaultErrorType,

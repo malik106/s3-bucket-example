@@ -1,3 +1,3 @@
-const lib = require('../lib/deleteFile');
+const s3 = require('../lib/s3');
 
-exports.deleteFile = (key) => lib.deleteFile(key);
+exports.deleteFile = (key) => s3.deleteFileFromS3(key);

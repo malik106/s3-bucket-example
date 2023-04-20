@@ -1,3 +1,3 @@
-const lib = require('../lib/uploadFile');
+const s3 = require('../lib/s3');
 
-exports.uploadFile = (packet) => lib.uploadFile(packet);
+exports.uploadFile = (file) => s3.uploadToS3(file);
