@@ -37,7 +37,7 @@ Along with above main layers, it also contains various other sub-layers like:-
   Change directory to ems by typing below mentioned command :-
 
   ```sh
-  cd expressjs-boilerplate
+  cd s3-bucket-example
   ```
 
   Now run below mentioned command to install neccessary dependencies into your project :-

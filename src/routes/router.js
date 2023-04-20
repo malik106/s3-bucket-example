@@ -1,7 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const uploadFileController = require('../controllers/uploadFile');
-const deleteFileController = require('../controllers/deleteFile');
+const attachmentController = require('../controllers/attachment');
 
 const router = express.Router();
 
@@ -10,13 +9,13 @@ const upload = multer({ dest: 'uploads/' });
 // name:  File upload
 // end-point:  /upload-file
 router.post(
-  '/upload-file',
+  '/attachment',
   upload.single('file'),
-  uploadFileController.uploadFile,
+  attachmentController.uploadFile,
 );
 
 // name:  File deleted
 // end-point:  /delete-file
-router.delete('/delete-file', deleteFileController.deleteFile);
+router.delete('/attachment', attachmentController.deleteFile);
 
 module.exports = router;
